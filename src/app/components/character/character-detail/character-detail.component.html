@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div *ngIf="character" class="character-details">
+    <h2>{{ character.forms[0].name }}</h2>
+    <p><strong>Base Experience:</strong> {{ character.base_experience }}</p>
+    <p><strong>Height:</strong> {{ character.height }}</p>
+
+    <h3>Abilities</h3>
+    <ul>
+        <li *ngFor="let ability of character.abilities">
+            <span [class.hidden]="ability.is_hidden">{{ ability.ability.name }}</span>
+        </li>
+    </ul>
+
+    <h3>Moves</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Move</th>
+                <th>Level Learned At</th>
+                <th>Learn Method</th>
+                <th>Version Group</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let move of character.moves">
+                <td>{{ move.move.name }}</td>
+                <td>{{ move.version_group_details[0].level_learned_at }}</td>
+                <td>{{ move.version_group_details[0].move_learn_method.name }}</td>
+                <td>{{ move.version_group_details[0].version_group.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

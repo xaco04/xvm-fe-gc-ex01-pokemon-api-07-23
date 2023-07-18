@@ -1,0 +1,8 @@
+.buscador {
+    display: flex;
+}
+.buscador button{
+    margin-left: 5px;
+    border: solid white;
+    color: white;
+}

@@ -1,10 +1,12 @@
 # Prueba Técnica Frontend
 
 
-1.    Introducción
+## 1. Introducción
+
 En el presente proyecto del Bootcamp Full Stack correspondiente a la parte de Angular Framework se espera que el alumno demuestre los conocimientos adquiridos en desarrollo de UX con SPA. 
 
-2.    Descripción 
+## 2. Descripción
+
 El reto consiste en la creación de una APP capaz de interactuar con los Endpoints de la API proporcionada por PokeAPI: https://pokeapi.co/docs/v2
 
 Los requisitos funcionales de la aplicación son los siguientes: 
